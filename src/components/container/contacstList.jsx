@@ -31,6 +31,7 @@ const ContactsList = () => {
 
     return (
         <div className='ContactsList'>
+            <h2>Contacts:</h2>
             <div>
             {
                 contacts.map((contact, index) => (
@@ -44,6 +45,7 @@ const ContactsList = () => {
             }
             </div>
             <div>
+                <h2>New Contact:</h2>
                 <ContactForm add={addContact}></ContactForm>
             </div>
         </div>

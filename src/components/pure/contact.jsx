@@ -10,12 +10,15 @@ const ContactComponent = ({ index, contact, actions }) => {
         <div className='Contact'>
             <div className='content'>
                 <h3>{ contact.lastName }, { contact.firstName }</h3>
-                <p>{ contact.email }</p>
-                <p>{ contact.connected ? 'Online' : 'Offline' }</p>
+                <p>
+                    { contact.email }
+                    <div className={ `connected ${contact.connected ? 'success' : 'danger'}` }></div>
+                </p>
+                
             </div>
             <div className='actions'>
-                <button onClick={() => changeConnected(index)}>{ contact.connected ? 'Connect' : 'Disconnect' }</button>
-                <button onClick={() => remove(index)}>Remove</button>
+                <button onClick={() => changeConnected(index)} className={ contact.connected ? 'warn' : 'success' }>{ contact.connected ? 'Disconnect' : 'Connect' }</button>
+                <button onClick={() => remove(index)} className="danger">Remove</button>
             </div>
 
         </div>

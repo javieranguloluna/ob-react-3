@@ -16,16 +16,19 @@ const ContactForm = ({ add }) => {
             lastName.current.value,
             email.current.value
         ))
+        firstName.current.value = ''
+        lastName.current.value = ''
+        email.current.value = ''
     }
     return (
         <form onSubmit={addNewContact} className="ContactForm">
             <label htmlFor="firstName">First Name</label>
             <input ref={firstName} id="firstName" type="text" required autoFocus />
-            <label htmlFor="lastName">First Name</label>
+            <label htmlFor="lastName">Last Name</label>
             <input ref={lastName} id="lastName" type="text" required />
-            <label htmlFor="email">First Name</label>
+            <label htmlFor="email">Email</label>
             <input ref={email} id="email" type="email" required />
-            <button type='submit'>Add</button>
+            <button type='submit' className="success">Add</button>
         </form>
     )
 }

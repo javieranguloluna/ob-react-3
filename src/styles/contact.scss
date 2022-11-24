@@ -1,16 +1,29 @@
 .Contact {
-    background-color: blue;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-top: 1px solid #333;
 
     .content {
-        background-color: aliceblue;
+        padding: 1rem;
+        width: 70%;
+        max-width: 70%;
+        p {
+            line-break: anywhere;
+        }
+        .connected {
+            display: inline-block;
+            width: 0.7rem;
+            height: 0.7rem;
+            border-radius: 50%;
+            margin: 0 5px;
+        }
     }
 
     .actions {
-        background-color: aqua;
         display: flex;
         flex-direction: column;
+        width: 30%;
+        min-width: fit-content;
     }
 }

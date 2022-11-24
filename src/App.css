@@ -1,6 +1,33 @@
 .App {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 1rem;
+}
+
+.App button {
+  border: solid 1px transparent;
+  border-radius: 7px;
+  padding: 0.5rem 1rem;
+  margin: 0.2rem;
+}
+
+.App button:hover {
+  border: 1px solid #aaa;
+}
+
+.App .primary {
+  background-color: aquamarine;
+}
+
+.App .success {
+  background-color: forestgreen;
+}
+
+.App .warn {
+  background-color: goldenrod;
+}
+.App .danger {
+  background-color: tomato;
 }

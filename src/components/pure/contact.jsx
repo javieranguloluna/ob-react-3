@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Contact from './../../models/contact.model';
 
+import '../../styles/contact.scss'
+
 const ContactComponent = ({ index, contact, actions }) => {
     const { changeConnected, remove } = actions
     return (

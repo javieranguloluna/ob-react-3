@@ -2,6 +2,8 @@ import React, { useRef } from 'react'
 import PropTypes from 'prop-types';
 import Contact from '../../../models/contact.model';
 
+import '../../../styles/contactForm.scss'
+
 const ContactForm = ({ add }) => {
     const firstName = useRef('')
     const lastName = useRef('')

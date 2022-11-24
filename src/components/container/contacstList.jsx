@@ -3,6 +3,8 @@ import ContactComponent from '../pure/contact'
 import ContactForm from '../pure/forms/contactForm'
 import Contact from './../../models/contact.model';
 
+import '../../styles/contactsList.scss'
+
 const ContactsList = () => {
     const defaultContacts = [
         new Contact('Pepe', 'Lopez', 'pepe.lopez@gmail.com'),
@@ -28,7 +30,7 @@ const ContactsList = () => {
     const addContact = (newContact) => setContacts([...contacts, newContact])
 
     return (
-        <div className='ContactList'>
+        <div className='ContactsList'>
             <div>
             {
                 contacts.map((contact, index) => (
